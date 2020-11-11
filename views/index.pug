@@ -1,10 +1,10 @@
-doctype html
-html
-	head
-		title= title
-	body
-		h1 Chat App
-		block content
-		hr
-		footer
-			p Copyright &copy; 2020
+extends layout
+
+block content
+	.container
+		.card
+			.card-body
+				.message-box#message-box
+				
+			.card-footer
+				input#sender(type="text", name="sender")
