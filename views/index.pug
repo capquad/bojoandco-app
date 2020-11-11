@@ -5,6 +5,8 @@ block content
 		.card
 			.card-body
 				.message-box#message-box
-				
+
 			.card-footer
-				input#sender(type="text", name="sender")
+				form(action="/", method="post")
+					.form-group
+						input#sender(type="text", name="sender", placeholder="Send Message").form-control
